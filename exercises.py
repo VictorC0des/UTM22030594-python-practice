@@ -43,3 +43,30 @@ data_person["Age"] = 19
 #Print values from the dictionary with a person's data.
 for data in data_person.values():
     print(data)
+
+
+
+#Creation of a function that receives as parameter a sign and two numbers.
+def operations(operator, n1, n2):
+    if operator == "+":
+        return n1+n2
+
+    elif operator == "-":
+        return n1-n2
+
+    elif operator == "*":
+        return n1*n2
+    
+    elif operator == "/":
+        if n2 != 0:
+            return n1 / n2
+        else:
+            return "It cannot be divided by 0."
+        
+    else: 
+        return "Invalid operator"
+    
+print(operations("+", 10, 10))
+
+
+
