@@ -11,9 +11,11 @@ names.append("Jaime")
 for name in names:
     print(name)
 
+
+
+
 #Initialize a tuple with numbers from 1 to 7
 numbers = (1,2,3,4,5,6,7)
-
 
 i = 0
 
@@ -21,3 +23,23 @@ i = 0
 while i < len(numbers):
     print(numbers[i])
     i = i + 1
+
+
+
+#Initialize a dictionary with a person's data.
+data_person = {
+    "Name": "Victor",
+    "Last name": "Carmona",
+    "Age": 18
+}
+
+#Print values from the dictionary with a person's data.
+for data in data_person.values():
+    print(data)
+
+#A dictionary value is replaced.
+data_person["Age"] = 19
+
+#Print values from the dictionary with a person's data.
+for data in data_person.values():
+    print(data)
